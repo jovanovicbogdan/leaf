@@ -89,4 +89,4 @@ TESTRAIL:
 
 ```sh
 trcli -y -h "https://$TESTRAIL_INSTANCE_NAME.testrail.io/" -u "$TESTRAIL_USERNAME" -p "$TESTRAIL_PASSWORD" --project "$PROJECT_NAME" parse_junit --case-matcher "name" -f "./test-results/junit-report.xml" --title "$TESTRAIL_TEST_RUN_TITLE"
-``
+```

@@ -1,0 +1,5 @@
+# This file contains feature flags that can be toggled on or off.
+FEATURE_FLAGS:
+  HOMEPAGE_AB: off
+  HOMEPAGE_AB_VARIANT: off
+  TEST_FF: on

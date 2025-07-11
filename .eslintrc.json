@@ -1,0 +1,82 @@
+{
+  "env": {
+    "browser": true,
+    "es2022": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "sourceType": "module",
+    "ecmaVersion": "latest",
+    "parser": "@typescript-eslint/parser"
+  },
+  "plugins": ["@typescript-eslint"],
+  "ignorePatterns": ["test-results/", "node_modules/", "playwright-report/"],
+  "rules": {
+    "no-unused-vars": "off",
+    "semi": ["error", "always"],
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/semi": ["error", "always"],
+    "@typescript-eslint/member-delimiter-style": "warn",
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/no-floating-promises": "error",
+    "@typescript-eslint/await-thenable": "error",
+    "indent": ["error", 2],
+    "@typescript-eslint/indent": "off",
+    "quotes": ["error", "single"],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline"
+      }
+    ],
+    "arrow-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "comma-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "space-before-blocks": ["error", "always"],
+    "key-spacing": [
+      "error",
+      {
+        "mode": "strict",
+        "beforeColon": false,
+        "afterColon": true
+      }
+    ],
+    "keyword-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "object-curly-spacing": ["error", "always"],
+    "space-infix-ops": [
+      "error",
+      {
+        "int32Hint": true
+      }
+    ],
+    "func-call-spacing": ["error", "never"],
+    "no-debugger": "warn"
+  }
+}

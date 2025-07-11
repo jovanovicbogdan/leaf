@@ -1,0 +1,24 @@
+{
+  "include": ["src/**/*", "playwright.config.ts"],
+  "compilerOptions": {
+    "sourceMap": true,
+    "outDir": "./build",
+    "rootDir": "./",
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "**/zzzIgnoreFolder/**"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "leaf-automation-framework",
+  "description": "LEAF (Lean Enterprise Automation Framework) is a scalable, enterprise-grade testing framework powered by Playwright and Node.js.",
+  "version": "1.0.0",
+  "author": "Lam Le",
+  "email": "lamle2558@gmail.com",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "format": "prettier . --write",
+    "pretest": "tsc --noEmit",
+    "test": "playwright test",
+    "test:mobile": "tsc --noEmit && playwright test --project 'Google Chrome Mobile' --project 'Firefox Mobile' --project 'Safari Mobile' --project 'Microsoft Edge Mobile'",
+    "test:tablet": "tsc --noEmit && playwright test --project 'Google Chrome Tablet' --project 'Firefox Tablet' --project 'Safari Tablet' --project 'Microsoft Edge Tablet'",
+    "test:desktop": "tsc --noEmit && playwright test --project 'Google Chrome Desktop' --project 'Firefox Desktop' --project 'Safari Desktop' --project 'Microsoft Edge Desktop'"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.4.7",
+    "npm": "^11.4.1",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.14.0",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.57.1",
+    "prettier": "3.3.3",
+    "typescript": "^5.8.3",
+    "zod": "^3.24.2"
+  }
+}

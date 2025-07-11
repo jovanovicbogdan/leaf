@@ -1,0 +1,35 @@
+{
+  "users": {
+    "normal": [
+      {
+        "mockDataId": "simple1",
+        "username": "simpleuser1",
+        "password": "simplepass1",
+        "role": "user"
+      },
+      {
+        "mockDataId": "simple2",
+        "username": "simpleuser2",
+        "password": "simplepass2",
+        "role": "user"
+      }
+    ],
+    "enterprise": [
+      {
+        "mockDataId": "enterpriseUpwork",
+        "username": "ent_user1",
+        "password": "ent_pass1",
+        "role": "enterprise_admin",
+        "company": "TestInc",
+        "features": ["SSO", "audit_logs"]
+      },
+      {
+        "mockDataId": "enterpriseGoogle",
+        "username": "ent_user2",
+        "password": "ent_pass2",
+        "role": "enterprise_user",
+        "company": "BetaInc"
+      }
+    ]
+  }
+}
